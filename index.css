@@ -1,0 +1,225 @@
+/* RESET DEFAULT STYLES */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body{
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.6;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#0a2540;
+    padding:15px 40px;
+    color:white;
+}
+
+/* LOGO */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:45px;
+    height:45px;
+    border-radius:5px;
+}
+
+/* NAVIGATION */
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00c3ff;
+}
+
+/* HERO SECTION */
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(rgba(10,37,64,0.8),rgba(10,37,64,0.8)),
+    url("images/laptop background.jpg");
+    background-size:cover;
+    color:white;
+}
+
+.hero h2{
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+/* CART BUTTON */
+.cart-link{
+    background:#00c3ff;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.cart-link:hover{
+    background:#008bb5;
+}
+
+/* FEATURED LAPTOP SECTION */
+.featured-laptops{
+    padding:50px 40px;
+    text-align:center;
+}
+
+.featured-laptops h2{
+    margin-bottom:40px;
+    font-size:28px;
+}
+
+/* LAPTOP GRID */
+.laptop-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    gap:25px;
+}
+
+/* LAPTOP CARD */
+.laptop-card{
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.laptop-card:hover{
+    transform:translateY(-5px);
+}
+
+/* LAPTOP IMAGE */
+.laptop-card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    margin-bottom:15px;
+    border-radius:5px;
+}
+
+/* PRICE */
+.price{
+    color:#0a2540;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+/* ADD TO CART BUTTON */
+.add-to-cart{
+    background:#0a2540;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.add-to-cart:hover{
+    background:#00c3ff;
+}
+
+/* ABOUT SECTION */
+.about{
+    padding:60px 40px;
+    background:white;
+    text-align:center;
+}
+
+.about h2{
+    margin-bottom:15px;
+}
+
+/* CONTACT SECTION */
+.contact{
+    padding:60px 40px;
+    background:#f4f6f9;
+    text-align:center;
+}
+
+.contact h2{
+    margin-bottom:15px;
+}
+
+/* CONTACT FORM */
+form{
+    max-width:500px;
+    margin:20px auto;
+    display:flex;
+    flex-direction:column;
+}
+
+form input,
+form textarea{
+    padding:10px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+/* FORM BUTTON */
+form button{
+    background:#0a2540;
+    color:white;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+form button:hover{
+    background:#00c3ff;
+}
+
+/* FOOTER */
+footer{
+    background:#0a2540;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav{
+    margin-top:10px;
+}
+
+.hero h2{
+    font-size:28px;
+}
+
+}
